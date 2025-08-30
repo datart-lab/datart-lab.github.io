@@ -1,0 +1,43 @@
+{% if site.data.settings.publications.enable == true %}
+<div class="container">
+  <section class="section animate">
+    <div class="row">
+      <div class="col col-12">
+        {% if site.data.settings.publications.publications__title != '' or site.data.settings.publications.publications__description != '' %}
+          <div class="section__info">
+            {% if site.data.settings.publications.publications__title != '' %}
+              <h2 class="section__small__title">{{ site.data.settings.publications.publications__title }}</h2>
+            {% endif %}
+            {% if site.data.settings.publications.publications__description != '' %}
+              <p class="section__description">{{ site.data.settings.publications.publications__description }}</p>
+            {% endif %}
+          </div>
+        {% endif %}
+
+          <ul class="publications-list list-reset">
+            {% for p in site.data.settings.publications.publications__items %}
+              <li class="publication">
+                <span class="citation">{{ p.citation }}</span>
+                {% if p.paper_url or p.github_url %}
+                  <span class="publication__links">
+                    {% if p.paper_url %}
+                      <a href="{{ p.paper_url }}" class="publication__link" target="_blank" title="View Paper">
+                        <span class="fa-regular fa-file-lines" role="img" aria-label="View Paper"></span>
+                      </a>
+                    {% endif %}
+                    {% if p.github_url %}
+                      <a href="{{ p.github_url }}" class="publication__link" target="_blank" title="View GitHub Repo">
+                        <span class="ion ion-logo-github" role="img" aria-label="View GitHub Repo"></span>
+                      </a>
+                    {% endif %}
+                  </span>
+                {% endif %}
+              </li>
+            {% endfor %}
+          </ul>
+
+      </div>
+    </div>
+  </section>
+</div>
+{% endif %}

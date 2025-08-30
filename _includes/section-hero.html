@@ -1,0 +1,29 @@
+<style>
+  .footer {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+  }
+
+  .header {
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+  }
+</style>
+{% if site.data.settings.hero.enable == true %}
+<div class="hero__container">
+    <div class="hero">
+        <img src="{{ site.data.settings.hero.hero__image }}" alt="{{ site.data.settings.title }}">
+        <div class="hero__wrapper">
+            <div class="hero__content">
+                <div class="hero__title">
+                    <h1> Decision Analytics </h1>
+                    <h2> Advanced Research and Development Lab </h2>
+                </div>
+                {% if page.image_caption %}
+                <div class="hero__caption">{{ page.image_caption | markdownify | replace: '<p>' | replace: '</p>' }}</div>
+                {%endif %}
+            </div>
+        </div>
+    </div>
+</div>
+{% endif %}

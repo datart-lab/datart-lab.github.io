@@ -1,0 +1,410 @@
+#-------------------------------
+# Site Settings
+title: Datart Lab
+logo: /images/logo_trimmed.png # You can add own logo. For example '/images/logo.png'.
+description: Site description
+color_scheme: light # You can choose three modes auto, light, and dark. By default, the auto mode is set, which means the user can choose the light or dark mode themself.
+
+
+#-------------------------------
+# Navigation Settings
+menu__settings:
+  menu__items:
+    - title: 'Work'
+      url: '/work/'
+    - title: 'Team'
+      url: '/team/'
+    - title: 'Contact'
+      url: '/contact/'
+
+
+#-------------------------------
+# Author Settings
+author:
+  author__name:
+  author__bio:
+  author__avatar:
+
+# Example of adding a new link to the footer - {icon: "ion-logo-dribbble", link: "https://dribbble.com"}
+# Other icons can be found at https://ionicons.com/v4/
+
+
+#-------------------------------
+# Hero Settings
+hero:
+  enable: true
+  hero__title:
+  hero__description:
+  hero__image: /images/hero.jpg
+
+
+#-------------------------------
+# Logos Settings
+logos:
+  enable: true
+  logos__title: Industry Collaborators
+
+logo__items:
+
+  - name: Arute
+    link: "https://arutesolutions.com/"
+    image: "/images/arute.png"
+
+  - name: Bicakcilar
+    link: "https://kocmedical.com/"
+    image: "/images/bicakcilar.svg"
+
+  - name: Borcelik
+    link: "https://www.borcelik.com/"
+    image: "/images/borcelik.png"
+
+  - name: Cansan
+    link: "https://www.cansan.com.tr/"
+    image: "/images/cansan.png"
+
+  - name: Durak
+    link: "https://durak.com/"
+    image: "/images/durak.png"
+
+  - name: Funthemental
+    link: "http://www.funthemental.com.tr/"
+    image: "/images/fm.png"
+
+  - name: Harris Health
+    link: "https://www.harrishealth.org/"
+    image: "/images/hh.png"
+
+  - name: Hitit
+    link: "https://www.hitit.com/"
+    image: "/images/hitit.png"
+
+  - name: Honeywell
+    link: "https://www.honeywell.com/"
+    image: "/images/hw.png"
+
+  - name: Keller Williams
+    link: "https://www.kw.com/"
+    image: "/images/kw.png"
+
+  - name: Kronos
+    link: "https://www.ukg.com/"
+    image: "/images/ukg.png"
+
+  - name: Magic Generations
+    link: "https://www.mgsportif.com/"
+    image: "/images/mg.png"
+
+  - name: Mir Unique Solutions
+    link: "https://www.mirarge.com/"
+    image: "/images/mir.png"
+
+  - name: Modular Mining
+    link: "https://www.komatsu.com/"
+    image: "/images/Komatsu.png"
+
+  - name: Odysee
+    link: "https://www.odysee.ai/"
+    image: "/images/odysee.png"
+
+  - name: Tam Finans
+    link: "https://www.tamfinans.com.tr/"
+    image: "/images/tamfinans.png"
+
+  - name: Turkuvaz Medya Grubu
+    link: "https://www.turkuvazmedyagrubu.com.tr/"
+    image: "/images/tmg.png"
+
+
+#-------------------------------
+# Newsletter
+mailchimp:
+  enable: false
+  mailchimp__identifier:
+  mailchimp__input__text:
+  mailchimp__button__text:
+
+
+#-------------------------------
+# Work Settings
+work:
+  enable: true
+  work__title: Selected Projects
+
+
+#-------------------------------
+# Publications Settings
+publications:
+  enable: true
+  publications__title: Publications
+  publications__description:
+
+  publications__items:
+    - citation: "U. Findik, O. E. Kundakcioglu, and S. Alizamir. <em>Handbook of Combinatorial Optimization</em>, 3rd Ed., P. M. Pardalos and O. A. Prokopyev, Eds., Springer, 2024, ch. Generalized assignment problem."
+      paper_url: "https://link.springer.com/rwe/10.1007/978-3-030-54621-2_200-2"
+    - citation: "C. Y. Yildiz and O. E. Kundakcioglu. Disaster relief inventory simulation: Managing resources in humanitarian camps. <em>Proceedings of the 2024 INFORMS Winter Simulation Conference</em>."
+      paper_url: "https://ieeexplore.ieee.org/document/10838763"
+    - citation: "S. Azizi, D. N. Yoltay, and O. E. Kundakcioglu. <em>Handbook of Combinatorial Optimization</em>, 3rd Ed., P. M. Pardalos and O. A. Prokopyev, Eds., Springer, 2024, ch. Inventory management for medical supplies."
+      paper_url: "https://link.springer.com/rwe/10.1007/978-3-030-54621-2_877-1"
+    - citation: "C. Y. Yildiz and O. E. Kundakcioglu. <em>Handbook of Combinatorial Optimization</em>, 3rd Ed., P. M. Pardalos and O. A. Prokopyev, Eds., Springer, 2024, ch. Optimization for time series decomposition."
+      paper_url: "https://link.springer.com/rwe/10.1007/978-3-030-54621-2_881-1"  
+    - citation: "H. Shourabizadeh, O. E. Kundakcioglu, C. D. C. Bozkir, M. B. Tufekci, and A. C. Henry. <em>Healthcare Inventory Management in the Presence of Supply Disruptions and a Reliable Secondary Supplier</em>. <em>Annals of Operations Research</em>, 2023, vol. 331, pp. 1149-1206."
+      paper_url: "https://doi.org/10.1007/s10479-023-05620-y"
+
+    - citation: "I. E. Sakarya and O. E. Kundakcioglu. Multi-instance learning by maximizing the area under receiver operating characteristic curve. <em>Journal of Global Optimization</em>, 2023, vol. 85, pp. 351-375."
+      paper_url: "https://doi.org/10.1007/s10898-022-01219-y"
+      github_url: "https://github.com/OEKundakcioglu/MI-ROCMax"
+
+    - citation: "C. D. C. Bozkir, O. E. Kundakcioglu, and A. C. Henry. Hospital service levels during drug shortages: Stocking and transshipment policies for pharmaceutical inventory. <em>Journal of Global Optimization</em>, 2022, vol. 83, pp. 565-584."
+      paper_url: "https://doi.org/10.1007/s10898-021-01058-3"
+      github_url: "https://github.com/OEKundakcioglu/HospitalInventorySimulation"
+
+    - citation: "S. Korkmaz, O. E. Kundakcioglu, and O. Sivrikaya. A fluid approximation for the single-leg fare allocation problem with nonhomogeneous Poisson demand. <em>Journal of Revenue and Pricing Management</em>, 2022, vol. 21, pp. 81-96."
+      paper_url: "https://doi.org/10.1057/s41272-021-00284-4"
+
+    - citation: "O. Simsek and O. E. Kundakcioglu. Cost of fairness in agent scheduling for contact centers. <em>Journal of Industrial and Management Optimization</em>, 2022, vol. 18, no. 2, pp. 873-896."
+      paper_url: "https://doi.org/10.3934/jimo.2021001"
+
+    - citation: "S. Azizi, C. D. C. Bozkir, A. C. Trapp, O. E. Kundakcioglu, and A. K. Kurbanzade. Aid allocation for camp-based and urban refugees with uncertain demand and replenishments. <em>Production and Operations Management</em>, 2021, vol. 30, no. 12, pp. 4455-4474."
+      paper_url: "https://doi.org/10.1111/poms.13531"
+      github_url: "https://github.com/OEKundakcioglu/RefugeeAidAllocation"
+
+    - citation: "S. Gozuyilmaz and O. E. Kundakcioglu. Mathematical optimization for time series decomposition. <em>OR Spectrum</em>, 2021, vol. 43, pp. 733-758."
+      paper_url: "https://doi.org/10.1007/s00291-021-00637-w"
+
+    - citation: "M. Önal, O. E. Kundakcioglu, and S. Jain. An EOQ model with deteriorating items and self-selection constraints. <em>Optimization Letters</em>, 2020, vol. 14, pp. 1491-1518."
+      paper_url: "https://doi.org/10.1007/s11590-020-01566-3"
+
+    - citation: "T. Yavuz, O. E. Kundakcioglu, and T. Ünlüyurt. Exact and heuristic approaches to detect failures in failed k-out-of-n systems. <em>Computers and Operations Research</em>, 2019, vol. 112, 104752."
+      paper_url: "https://doi.org/10.1016/j.cor.2019.07.010"
+
+    - citation: "N. R. Barshes, S. Saedi, J. Wrobel, P. Kougias, O. E. Kundakcioglu, and D. G. Armstrong. A model to estimate cost-savings in diabetic foot ulcer prevention efforts. <em>Journal of Diabetes and Its Complications</em>, 2017, vol. 31, no. 4, pp. 700-707."
+      paper_url: "https://doi.org/10.1016/j.jdiacomp.2016.12.017"
+
+    - citation: "B. Balcik, C. D. C. Bozkir, and O. E. Kundakcioglu. A literature review on inventory management in humanitarian supply chains. <em>Surveys in Operations Research and Management Science</em>, 2016, vol. 21, no. 2, pp. 101-116."
+      paper_url: "https://doi.org/10.1016/j.sorms.2016.10.002"
+
+    - citation: "M. Önal, A. Yenipazarli, and O. E. Kundakcioglu. A mathematical model for perishable products with price- and stock-dependent demand. <em>Computers and Industrial Engineering</em>, 2016, vol. 102, pp. 246-258."
+      paper_url: "https://doi.org/10.1016/j.cie.2016.11.002"
+
+    - citation: "S. Saedi, O. E. Kundakcioglu, and A. C. Henry. Mitigating the impact of drug shortages for a healthcare facility: An inventory management approach. <em>European Journal of Operational Research</em>, 2016, vol. 251, no. 1, pp. 107-123."
+      paper_url: "https://doi.org/10.1016/j.ejor.2015.11.017"
+
+    - citation: "H. Yang, O. E. Kundakcioglu, and D. Zeng. Healthcare data analytics. <em>Information Systems and e-Business Management</em>, 2015, vol. 13, no. 4, pp. 595-597."
+      paper_url: "https://link.springer.com/article/10.1007/s10257-015-0297-0"
+    - citation: "M. H. Poursaeidi and O. E. Kundakcioglu. Robust support vector machines for multiple instance classification. <em>Annals of Operations Research</em>, 2014, vol. 216, no. 1, pp. 205-227."
+      paper_url: "https://doi.org/10.1007/s10479-012-1241-z"
+
+    - citation: "H. Yang and O. E. Kundakcioglu. Healthcare intelligence: Turning data into knowledge. <em>IEEE Intelligent Systems, Trends & Controversies</em>, 2014, vol. 29, no. 3, pp. 54-56."
+      paper_url: "https://ieeexplore.ieee.org/document/6871721"
+    - citation: "S. Saedi and O. E. Kundakcioglu. <em>Handbook of Combinatorial Optimization</em>, 2nd Ed., P. M. Pardalos, D.-Z. Du, and R. Graham, Eds., Springer, 2013, ch. Combinatorial optimization in data mining, pp. 595-630."
+      paper_url: "https://link.springer.com/referencework/10.1007/978-1-4419-7997-1"
+    - citation: "M. H. Poursaeidi, M. Samorani, and O. E. Kundakcioglu. Offshore wind farm layout optimization: What is the hype? <em>Proceedings of the Industrial and Systems Engineering Research Conference</em>, ID: 952, 2013."
+
+
+#-------------------------------
+# Testimonials Section
+testimonials:
+  enable: true
+
+testimonial__title:
+testimonial__description:
+
+testimonial__items:
+
+  - name: "Ahmet Mert Yazıcı"
+    image: "/images/mert-yazici.jpg"
+    designation:
+    link:
+    content: >
+      Mert focuses on designing and developing scalable applications, backend services, data-driven solutions, and user-facing platforms at Datart Lab. He is currently pursuing a B.Sc. in Computer Engineering with a double major in Business Administration at  [Koç University](https://www.ku.edu.tr/en/).
+    socials:
+      - { icon: "ion ion-logo-linkedin", link: "https://www.linkedin.com/in/ahmet-mert-yazici" }
+      - { icon: "ion ion-logo-github", link: "https://github.com/ayazici21" }
+    hobbies:
+      - { icon: "☕", label: "Espresso" }
+      - { icon: "🎬", label: "Interstellar" }
+      - { icon: "🎮", label: "Resident Evil" }
+      - { icon: "🎵", label: "Progressive Metal" }
+    hobby_icons:
+      - { icon: "🏋" }
+      - { icon: "🎸" }
+
+  - name: "Egecan Aktan, BSc"
+    image: "/images/egecan-aktan.jpg"
+    designation:
+    link:
+    content: >
+       Egecan’s work focuses on perishable lot sizing, with broader interests on simulation, optimization, and artificial intelligence applied to logistics, scheduling, and resource allocation. He is pursuing an M.Sc. in Industrial Engineering at [Özyeğin University](https://www.ozyegin.edu.tr/en), where he also earned his B.Sc. in the same field. 
+    hobbies:
+      - { icon: "☕", label: "Blanc 1664" }
+      - { icon: "🎬", label: "Dune" }
+      - { icon: "🎮", label: "Expedition 33" }
+      - { icon: "🎵", label: "Dream Theater" }
+
+    hobby_icons:
+      - { icon: "🏀" }
+      - { icon: "🎲" }
+      - { icon: "🃏" }
+      - { icon: "🥊" }
+      - { icon: "🥁" }
+      - { icon: "🎳" }
+      - { icon: "🏁" }
+
+    socials:
+    - { icon: "ion ion-logo-linkedin", link: "https://www.linkedin.com/in/egecan-aktan-200b88135/" }
+    - { icon: "ion ion-logo-github", link: "https://github.com/Egecan33" }
+
+  - name: "Enes Tanrıkulu"
+    image: "/images/enes-tanrikulu.jpg"
+    designation:
+    link:
+    content : >
+       Enes is passionate about optimization and mathematical modeling, contributing to the design and implementation of data-driven decision support systems. His current work focuses on large-scale scheduling problems with practical industry applications. He is pursuing a B.Sc. in Industrial Engineering with a track in Machine Learning, alongside a Double Major in Computer Engineering at  [Koç University](https://www.ku.edu.tr/en/).
+    hobbies:
+      - { icon: "☕", label: "Cortado" }
+      - { icon: "🎬", label: "Paths of Glory" }
+      - { icon: "🎮", label: "Minecraft" }
+      - { icon: "🎵", label: "Blues" }
+
+    hobby_icons:
+    - { icon: "🏋" }
+    - { icon: "📖" }
+
+    socials:
+    - { icon: "ion ion-logo-linkedin", link: "https://www.linkedin.com/in/enes-tanrıkulu-363845145" }
+    - { icon: "ion ion-logo-github", link: "https://github.com/enestanrikuluu" }
+
+  - name: "Erhun Kundakcıoğlu, PhD"
+    image: "/images/erhun-kundakcioglu.jpg"
+    designation:
+    link:
+    content: >
+      Dr. Erhun Kundakcıoğlu is a Professor of Industrial Engineering at [Sabancı University](https://www.sabanciuniv.edu/en) and Director of the Datart Lab. His research centers on decision analytics and mathematical optimization. He earned a PhD in Industrial and Systems Engineering from the [University of Florida](https://www.ufl.edu). Previously, he held faculty positions at the [University of Houston](https://uh.edu) and [Özyeğin University](https://www.ozyegin.edu.tr/en), and served as a Distinguished Scientist at [Optym](https://optym.com).
+    hobbies:
+      - { icon: "☕", label: "Espresso" }
+      - { icon: "🎬", label: "Shawshank Redemption" }
+      - { icon: "🎮", label: "FIFA" }
+      - { icon: "🎵", label: "The Milk Carton Kids" }
+    hobby_icons:
+      - { icon: "🏀" }
+      - { icon: "🎸" }
+    socials:
+        - {icon: "ion ion-logo-linkedin", link: "https://www.linkedin.com/in/erhunkundakcioglu"}
+        - {icon: "ion ion-logo-github", link: "https://github.com/OEKundakcioglu"}
+        - {icon: "fa-brands fa-google-scholar", link: "https://scholar.google.com/citations?user=k6NTKvsAAAAJ&hl=en"}
+
+  - name: "Esma Nehir Vardar"
+    image: "/images/nehir-vardar.jpg"
+    designation:
+    link:
+    content: >
+        Nehir explores operations research, develops real-life solutions, and learns how data and algorithms are applied to practical problems at Datart Lab, while studying Computer Science at [Özyeğin University](https://www.ozyegin.edu.tr/en), where she is pursuing a B.Sc. with a minor in Industrial Engineering.
+    hobbies:
+      - { icon: "☕", label: "Iced Americano" }
+      - { icon: "🎬", label: "Inglourious Basterds" }
+      - { icon: "🎵", label: "Queen" }
+
+    hobby_icons:
+      - { icon: "🎸" }
+      - { icon: "🏐" }
+    socials:
+        - {icon: "ion ion-logo-linkedin", link: "https://www.linkedin.com/in/esma-nehir-vardar-4448562b5"}
+        - {icon: "ion ion-logo-github", link: "https://github.com/nehirvardar"}
+
+  - name: "Muhammed Esad Simitcioğlu, MSc"
+    image: "/images/esad-simitcioglu.jpg"
+    designation:
+    link:
+    content: >
+     Esad specializes in privacy, machine learning, and software engineering, with strong expertise in full-stack development and system integration. He is a lead developer at Datart Lab, where he contributes to optimization engines and decision analytics platforms. He earned his M.Sc. in Computer Science from  [Koç University](https://www.ku.edu.tr/en/).
+
+    hobbies:
+      - { icon: "☕", label: "Black Tea" }
+      - { icon: "🎮", label: "Baldur's Gate" }
+    hobby_icons:
+      - { icon: "🎾" }  
+      - { icon: "💻" }
+
+    socials:
+    - { icon: "ion ion-logo-linkedin", link: "https://www.linkedin.com/in/muhammed-esad-simitcioglu" }
+    - { icon: "ion ion-logo-github", link: "https://github.com/EsadSimitcioglu" }
+    - { icon: "fa-brands fa-google-scholar", link: "https://scholar.google.com/citations?user=dLcZwYsAAAAJ" }
+
+
+  - name: "Nurullah Y. Duru, BSc"
+    image: "/images/nurullah-duru.jpg"
+    designation:
+    link:
+    content: >
+     Nurullah's research centers on perishable food supply chains, with broader interests in the integration of machine learning and optimization algorithms. He is also keen on sports analytics, exploring data-driven insights in basketball and football. He is pursuing an M.Sc. in Industrial Engineering at [Özyeğin University](https://www.ozyegin.edu.tr/en), where he also earned his B.Sc. in the same field.
+    hobbies:
+      - { icon: "☕", label: "Black Tea" }
+      - { icon: "🎬", label: "Seven" }
+      - { icon: "🎮", label: "NBA 2K" }
+      - { icon: "🎵", label: "Kendrick Lamar" }
+
+    hobby_icons:
+      - { icon: "🏀" }
+      - { icon: "⚽" }
+    
+    socials:
+    - { icon: "ion ion-logo-linkedin", link: "https://www.linkedin.com/in/nurullah-yusuf-duru-81253a16b" }
+    - { icon: "ion ion-logo-github", link: "https://github.com/NurullahYusufDuru" }
+
+  - name: "Ulvi Fındık, MSc"
+    image: "/images/ulvi-findik.jpeg"
+    designation:
+    link:
+    content: >
+     Ulvi's work focuses on industrial optimization, decision analytics, and applied operations research, with hands-on experience in developing advanced scheduling and optimization solutions across diverse application domains. He is pursuing his Ph.D. in Industrial Engineering at [Sabancı University](https://www.sabanciuniv.edu/en), after earning both his M.Sc. and B.Sc. degrees in Industrial Engineering from [Özyeğin University](https://www.ozyegin.edu.tr/en).
+    hobbies:
+      - { icon: "☕", label: "Black Coffee" }
+      - { icon: "🎬", label: "The Prestige" }
+      - { icon: "🎮", label: "Dota 2" }
+      - { icon: "🎵", label: "Daft Punk, Muse" }
+
+    hobby_icons:
+      - { icon: "🏋" }
+      - { icon: "🎮" }
+      
+    socials:
+      - { icon: "ion ion-logo-linkedin", link: "https://www.linkedin.com/in/ulvi-fındık" }
+      - { icon: "ion ion-logo-github", link: "https://github.com/ulvifk" }
+
+
+#-------------------------------
+# Blog Section
+blog:
+  enable: false
+
+blog__settings:
+  blog__title:
+  blog__description:
+
+
+#-------------------------------
+# Footer Settings
+footer__background__image:
+
+
+#-------------------------------
+# Contact Settings
+contact:
+  email: # Add your form_id
+  description: # Add a description of your form
+
+# NOTE
+# Akio theme comes with a contact form built-in. You can use this form with Formspree (https://formspree.io/) service and get up to 50 submissions for free. Also, you can easily switch to another service if you want.
+
+
+#-------------------------------
+# Comment Section (Disqus)
+disqus:
+  enable: false
+  disqus__identifier: anvod-studio-test # Add your shortname for Disqus Comment. For example anvod-studio-test
+
+
+#-------------------------------
+# Google Analytics
+google-analytics:
+# Add your GA Tracking Id

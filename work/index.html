@@ -1,0 +1,39 @@
+---
+layout: page
+title: Work
+image: 
+image_alt: ...
+description: At **Datart Lab**, we design and build **intelligent optimization engines** from the ground up — starting with **mathematical models** and **algorithms** and extending all the way to **robust software systems** and **user-friendly applications**. We combine **rigorous research** with **real-world impact**. By leading government-funded projects and contributing to **state-of-the-art academic work**, we ensure our methods remain **innovative**, **validated**, and **impactful**. At the same time, we partner with companies in logistics, transportation, healthcare, and beyond to turn complex challenges into **practical, scalable solutions**.
+
+---
+
+<div class="container">
+  <section class="section animate">
+    <div class="section__info">
+      <h2 class="section__small__title">{{ site.data.settings.work.work__title }}</h2>
+    </div>
+    <div class="row">
+      {% for work in site.works reversed %}
+        <article class="work col col-4 col-d-6 col-t-12">
+          <div class="work__content">
+            <a href="{{ work.url }}" class="work__image">
+              <img class="lazy" data-src="{{ work.image }}" alt="{{ work.title }}">
+            </a>
+            <div class="work__info">
+              {% if work.category %}
+              <div class="work__category">{{ work.category }}</div>
+              {% endif %}
+              <h3 class="work__title"><a href="{{ work.url }}">{{ work.title }}</a></h3>
+            </div>
+          </div>
+        </article>
+      {% endfor %}
+    </div>
+  </section>
+</div>
+
+{% include section-logos.html %}
+
+{% include section-publications.html %}
+
+
