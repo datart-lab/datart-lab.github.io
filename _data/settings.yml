@@ -50,6 +50,10 @@ logo__items:
     link: "https://arutesolutions.com/"
     image: "/images/arute.png"
 
+  - name: ATV
+    link: "https://www.atv.com.tr"
+    image: "/images/tmg.png"
+
   - name: Bicakcilar
     link: "https://kocmedical.com/"
     image: "/images/bicakcilar.svg"
@@ -109,10 +113,6 @@ logo__items:
   - name: Tam Finans
     link: "https://www.tamfinans.com.tr/"
     image: "/images/tamfinans.png"
-
-  - name: Turkuvaz Medya Grubu
-    link: "https://www.turkuvazmedyagrubu.com.tr/"
-    image: "/images/tmg.png"
 
 
 #-------------------------------
