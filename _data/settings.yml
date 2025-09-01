@@ -2,7 +2,7 @@
 # Site Settings
 title: Datart Lab
 logo: /images/logo_trimmed.png # You can add own logo. For example '/images/logo.png'.
-description: Site description
+description: Decision Analytics Advanced Research and Development Lab
 color_scheme: light # You can choose three modes auto, light, and dark. By default, the auto mode is set, which means the user can choose the light or dark mode themself.
 
 
