@@ -1,3 +1,4 @@
 .DS_Store
 _site/*
 Gemfile.lock
+images/.DS_Store
