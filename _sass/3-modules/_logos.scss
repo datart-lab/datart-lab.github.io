@@ -10,6 +10,9 @@
   align-items: center;
   flex-wrap: wrap;
   margin: -$base-spacing-unit;
+  @media (max-width: $mobile) {
+   justify-content: center;
+  }
 }
 
 .logos__item {
