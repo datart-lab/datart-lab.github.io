@@ -11,6 +11,22 @@
     overflow: hidden;
     background-color: var(--background-alt-color);
 
+    .hero__image {
+      display: block;
+
+      @media (max-width: $mobile) {
+        display: none;
+      }
+    }
+
+    .hero__image--mobile {
+      display: none;
+
+      @media (max-width: $mobile) {
+        display: block;
+      }
+    }
+
     & > img {
       position: static;
       width: 100%;
@@ -29,8 +45,8 @@
     .hero__wrapper {
       position: absolute;
       inset: 0;
-      -webkit-backdrop-filter: blur(1px) brightness(0.85);
-              backdrop-filter: blur(1px) brightness(0.85);
+      -webkit-backdrop-filter: brightness(0.85);
+              backdrop-filter: brightness(0.85);
 
       .hero__content {
         position: absolute;

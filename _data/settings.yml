@@ -36,6 +36,7 @@ hero:
   hero__title:
   hero__description:
   hero__image: /images/hero.jpg
+  hero__image_mobile: /images/hero_mobile.jpg
 
 
 #-------------------------------
