@@ -12,7 +12,8 @@
 {% if site.data.settings.hero.enable == true %}
 <div class="hero__container">
     <div class="hero">
-        <img src="{{ site.data.settings.hero.hero__image }}" alt="{{ site.data.settings.title }}">
+        <img src="{{ site.data.settings.hero.hero__image }}" alt="{{ site.data.settings.title }}" class="hero__image">
+        <img src="{{ site.data.settings.hero.hero__image_mobile }}" alt="{{ site.data.settings.title }}" class="hero__image--mobile">
         <div class="hero__wrapper">
             <div class="hero__content">
                 <div class="hero__title">

@@ -11,7 +11,7 @@
   flex-wrap: wrap;
   margin: -$base-spacing-unit;
   @media (max-width: $mobile) {
-   justify-content: center;
+    justify-content: center;
   }
 }
 
@@ -25,7 +25,6 @@
 }
 
 .logos__link {
-  
   display: block;
   transition: all .2s ease;
   border-bottom: none !important;
@@ -43,9 +42,9 @@
   border-radius: 0 !important;
   
 
-  @media (max-width: $mobile) {
-    height: 2rem;
-  }
+//  @media (max-width: $mobile) {
+//    height: 2rem;
+//  }
 }
 
 .dark-mode {
