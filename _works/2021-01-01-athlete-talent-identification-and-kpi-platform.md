@@ -1,5 +1,5 @@
 ---
-title: Athlete Talent Identification and Development Platform
+title: Athlete Talent Identification and KPI Platform
 description: An integrated system, portal, and mobile/web app that manages athlete data, applies evaluation rules, and leverages advanced analytics to guide training and talent development.
 category: Machine Learning | Portal | Database
 image: '/images/spider.png'
