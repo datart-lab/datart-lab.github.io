@@ -5,9 +5,10 @@
   .header__inner {
     position: relative;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
     flex-wrap: wrap;
+    gap: 36px;
     padding: 40px $base-spacing-unit;
   }
 
@@ -29,6 +30,10 @@
 
 .logo__image {
   max-height: 45px;
+}
+
+.header__logo {
+  flex-shrink: 0;
 }
 
 /* Nav */
@@ -261,6 +266,7 @@
 .nav-button {
   display: flex;
   align-items: center;
+  margin-left: auto;
 }
 
 /* Humburger Menu */

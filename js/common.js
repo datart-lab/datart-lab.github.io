@@ -11,9 +11,11 @@ document.addEventListener("DOMContentLoaded", function() {
   /* =======================================================
   // Menu + Theme Switcher
   ======================================================= */
-  menuToggle.addEventListener("click", () => {
-    menu();
-  });
+  if (menuToggle && menuList) {
+    menuToggle.addEventListener("click", () => {
+      menu();
+    });
+  }
 
   function menuOpen() {
     menuList.classList.add("is-open");
@@ -24,6 +26,15 @@ document.addEventListener("DOMContentLoaded", function() {
   function menu() {
     menuToggle.classList.toggle("is-open");
     menuList.classList.toggle("is-visible");
+  }
+
+  if (menuToggle && menuList) {
+    document.querySelectorAll(".main-nav .nav__link").forEach((link) => {
+      link.addEventListener("click", () => {
+        menuToggle.classList.remove("is-open");
+        menuList.classList.remove("is-visible");
+      });
+    });
   }
 
   if (toggleTheme) {

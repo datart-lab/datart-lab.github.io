@@ -49,3 +49,40 @@
 .text-lg {
   font-size: 1.5rem;
 }
+
+.contact-section__intro {
+  color: var(--text-alt-color);
+
+  p {
+    margin-bottom: 0;
+  }
+}
+
+.contact-section__items {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+
+  @media (max-width: $desktop) {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+}
+
+.contact-section__item {
+  padding-top: 24px;
+  border-top: 1px solid var(--border-color);
+}
+
+.contact-section__title {
+  margin-bottom: 16px;
+  font-size: 1.5rem;
+}
+
+.contact-section__text {
+  color: var(--text-alt-color);
+
+  p {
+    margin-bottom: 0;
+  }
+}

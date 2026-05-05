@@ -1,0 +1,25 @@
+{% if site.data.settings.contact.enable == true %}
+<!-- begin contact -->
+<div class="container">
+  <section id="contact" class="section contact-section animate">
+    <div class="row">
+      <div class="col col-12">
+        <div class="section__info section__info--wide">
+          <h2 class="section__title">{{ site.data.settings.contact.contact__title }}</h2>
+          <div class="contact-section__intro text-lg">{{ site.data.settings.contact.contact__intro | markdownify }}</div>
+        </div>
+
+        <div class="contact-section__items">
+          {% for item in site.data.settings.contact.contact__items %}
+          <article class="contact-section__item">
+            <h3 class="contact-section__title">{{ item.title }}</h3>
+            <div class="contact-section__text">{{ item.content | markdownify }}</div>
+          </article>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+<!-- end contact -->
+{% endif %}

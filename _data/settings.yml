@@ -11,11 +11,13 @@ color_scheme: light # You can choose three modes auto, light, and dark. By defau
 menu__settings:
   menu__items:
     - title: 'Work'
-      url: '/work/'
-    - title: 'Team'
-      url: '/team/'
+      url: '/#work'
+    - title: 'Collaborators'
+      url: '/#collaborators'
+    - title: 'Publications'
+      url: '/#publications'
     - title: 'Contact'
-      url: '/contact/'
+      url: '/#contact'
 
 
 #-------------------------------
@@ -130,6 +132,7 @@ mailchimp:
 work:
   enable: true
   work__title: Selected Projects
+  work__description: At **Datart Lab**, we design and build **intelligent optimization engines** from the ground up — starting with **mathematical models** and **algorithms** and extending all the way to **robust software systems** and **user-friendly applications**. We combine **rigorous research** with **real-world impact**. By leading government-funded projects and contributing to **state-of-the-art academic work**, we ensure our methods remain **innovative**, **validated**, and **impactful**. At the same time, we partner with companies in logistics, transportation, healthcare, and beyond to turn complex challenges into **practical, scalable solutions**.
 
 
 #-------------------------------
@@ -203,174 +206,18 @@ publications:
 
 
 #-------------------------------
-# Testimonials Section
-testimonials:
+# Contact Section
+contact:
   enable: true
-
-testimonial__title:
-testimonial__description:
-
-testimonial__items:
-
-  - name: "Ahmet Mert Yazıcı"
-    image: "/images/mert-yazici.jpg"
-    designation:
-    link:
-    content: >
-      Mert focuses on designing and developing scalable applications, backend services, data-driven solutions, and user-facing platforms at Datart Lab. He is currently pursuing a B.Sc. in Computer Engineering with a double major in Business Administration at  [Koç University](https://www.ku.edu.tr/en/).
-    socials:
-      - { icon: "ion ion-logo-linkedin", link: "https://www.linkedin.com/in/ahmet-mert-yazici" }
-      - { icon: "ion ion-logo-github", link: "https://github.com/ayazici21" }
-    hobbies:
-      - { icon: "☕", label: "Espresso" }
-      - { icon: "🎬", label: "Interstellar" }
-      - { icon: "🎮", label: "Resident Evil" }
-      - { icon: "🎵", label: "Progressive Metal" }
-    hobby_icons:
-      - { icon: "🏋" }
-      - { icon: "🎸" }
-
-  - name: "Egecan Aktan, BSc"
-    image: "/images/egecan-aktan.jpg"
-    designation:
-    link:
-    content: >
-       Egecan’s work focuses on perishable lot sizing, with broader interests on simulation, optimization, and artificial intelligence applied to logistics, scheduling, and resource allocation. He is pursuing an M.Sc. in Industrial Engineering at [Özyeğin University](https://www.ozyegin.edu.tr/en), where he also earned his B.Sc. in the same field. 
-    hobbies:
-      - { icon: "☕", label: "Blanc 1664" }
-      - { icon: "🎬", label: "Dune" }
-      - { icon: "🎮", label: "Expedition 33" }
-      - { icon: "🎵", label: "Dream Theater" }
-
-    hobby_icons:
-      - { icon: "🏀" }
-      - { icon: "🎲" }
-      - { icon: "🃏" }
-      - { icon: "🥊" }
-      - { icon: "🥁" }
-      - { icon: "🎳" }
-      - { icon: "🏁" }
-
-    socials:
-    - { icon: "ion ion-logo-linkedin", link: "https://www.linkedin.com/in/egecan-aktan-200b88135/" }
-    - { icon: "ion ion-logo-github", link: "https://github.com/Egecan33" }
-
-  - name: "Enes Tanrıkulu"
-    image: "/images/enes-tanrikulu.jpg"
-    designation:
-    link:
-    content : >
-       Enes is passionate about optimization and mathematical modeling, contributing to the design and implementation of data-driven decision support systems. His current work focuses on large-scale scheduling problems with practical industry applications. He is pursuing a B.Sc. in Industrial Engineering with a track in Machine Learning, alongside a Double Major in Computer Engineering at  [Koç University](https://www.ku.edu.tr/en/).
-    hobbies:
-      - { icon: "☕", label: "Cortado" }
-      - { icon: "🎬", label: "Paths of Glory" }
-      - { icon: "🎮", label: "Minecraft" }
-      - { icon: "🎵", label: "Blues" }
-
-    hobby_icons:
-    - { icon: "🏋" }
-    - { icon: "📖" }
-
-    socials:
-    - { icon: "ion ion-logo-linkedin", link: "https://www.linkedin.com/in/enes-tanrıkulu-363845145" }
-    - { icon: "ion ion-logo-github", link: "https://github.com/enestanrikuluu" }
-
-  - name: "Erhun Kundakcıoğlu, PhD"
-    image: "/images/erhun-kundakcioglu.jpg"
-    designation:
-    link:
-    content: >
-      Dr. Erhun Kundakcıoğlu is a Professor of Industrial Engineering at [Sabancı University](https://www.sabanciuniv.edu/en) and Director of the Datart Lab. His research centers on decision analytics and mathematical optimization. He earned a PhD in Industrial and Systems Engineering from the [University of Florida](https://www.ufl.edu). Previously, he held faculty positions at the [University of Houston](https://uh.edu) and [Özyeğin University](https://www.ozyegin.edu.tr/en), and served as a Director and Distinguished Scientist at [Optym](https://optym.com).
-    hobbies:
-      - { icon: "☕", label: "Espresso" }
-      - { icon: "🎬", label: "Shawshank Redemption" }
-      - { icon: "🎮", label: "FIFA" }
-      - { icon: "🎵", label: "The Milk Carton Kids" }
-    hobby_icons:
-      - { icon: "🏀" }
-      - { icon: "🎸" }
-    socials:
-        - {icon: "ion ion-logo-linkedin", link: "https://www.linkedin.com/in/erhunkundakcioglu"}
-        - {icon: "ion ion-logo-github", link: "https://github.com/OEKundakcioglu"}
-        - {icon: "fa-brands fa-google-scholar", link: "https://scholar.google.com/citations?user=k6NTKvsAAAAJ&hl=en"}
-
-  - name: "Esma Nehir Vardar"
-    image: "/images/nehir-vardar.jpg"
-    designation:
-    link:
-    content: >
-        Nehir explores operations research, develops real-life solutions, and learns how data and algorithms are applied to practical problems at Datart Lab, while studying Computer Science at [Özyeğin University](https://www.ozyegin.edu.tr/en), where she is pursuing a B.Sc. with a minor in Industrial Engineering.
-    hobbies:
-      - { icon: "☕", label: "Iced Americano" }
-      - { icon: "🎬", label: "Inglourious Basterds" }
-      - { icon: "🎵", label: "Queen" }
-
-    hobby_icons:
-      - { icon: "🎸" }
-      - { icon: "🏐" }
-    socials:
-        - {icon: "ion ion-logo-linkedin", link: "https://www.linkedin.com/in/esma-nehir-vardar-4448562b5"}
-        - {icon: "ion ion-logo-github", link: "https://github.com/nehirvardar"}
-
-  - name: "Muhammed Esad Simitcioğlu, MSc"
-    image: "/images/esad-simitcioglu.jpg"
-    designation:
-    link:
-    content: >
-     Esad specializes in privacy, machine learning, and software engineering, with strong expertise in full-stack development and system integration. He is a lead developer at Datart Lab, where he contributes to optimization engines and decision analytics platforms. He earned his M.Sc. in Computer Science from  [Koç University](https://www.ku.edu.tr/en/).
-
-    hobbies:
-      - { icon: "☕", label: "Black Tea" }
-      - { icon: "🎮", label: "Baldur's Gate" }
-    hobby_icons:
-      - { icon: "🎾" }  
-      - { icon: "💻" }
-
-    socials:
-    - { icon: "ion ion-logo-linkedin", link: "https://www.linkedin.com/in/muhammed-esad-simitcioglu" }
-    - { icon: "ion ion-logo-github", link: "https://github.com/EsadSimitcioglu" }
-    - { icon: "fa-brands fa-google-scholar", link: "https://scholar.google.com/citations?user=dLcZwYsAAAAJ" }
-
-
-  - name: "Nurullah Y. Duru, BSc"
-    image: "/images/nurullah-duru.jpg"
-    designation:
-    link:
-    content: >
-     Nurullah's research centers on perishable food supply chains, with broader interests in the integration of machine learning and optimization algorithms. He is also keen on sports analytics, exploring data-driven insights in basketball and football. He is pursuing an M.Sc. in Industrial Engineering at [Özyeğin University](https://www.ozyegin.edu.tr/en), where he also earned his B.Sc. in the same field.
-    hobbies:
-      - { icon: "☕", label: "Black Tea" }
-      - { icon: "🎬", label: "Seven" }
-      - { icon: "🎮", label: "NBA 2K" }
-      - { icon: "🎵", label: "Kendrick Lamar" }
-
-    hobby_icons:
-      - { icon: "🏀" }
-      - { icon: "⚽" }
-    
-    socials:
-    - { icon: "ion ion-logo-linkedin", link: "https://www.linkedin.com/in/nurullah-yusuf-duru-81253a16b" }
-    - { icon: "ion ion-logo-github", link: "https://github.com/NurullahYusufDuru" }
-
-  - name: "Ulvi Fındık, MSc"
-    image: "/images/ulvi-findik.jpeg"
-    designation:
-    link:
-    content: >
-     Ulvi's work focuses on industrial optimization, decision analytics, and applied operations research, with hands-on experience in developing advanced scheduling and optimization solutions across diverse application domains. He is pursuing his Ph.D. in Industrial Engineering at [Sabancı University](https://www.sabanciuniv.edu/en), after earning both his M.Sc. and B.Sc. degrees in Industrial Engineering from [Özyeğin University](https://www.ozyegin.edu.tr/en).
-    hobbies:
-      - { icon: "☕", label: "Black Coffee" }
-      - { icon: "🎬", label: "The Prestige" }
-      - { icon: "🎮", label: "Dota 2" }
-      - { icon: "🎵", label: "Daft Punk, Muse" }
-
-    hobby_icons:
-      - { icon: "🏋" }
-      - { icon: "🎮" }
-      
-    socials:
-      - { icon: "ion ion-logo-linkedin", link: "https://www.linkedin.com/in/ulvi-fındık" }
-      - { icon: "ion ion-logo-github", link: "https://github.com/ulvifk" }
+  contact__title: Contact
+  contact__intro: Reach out to us at [team@datart-lab.com](mailto:team@datart-lab.com) to connect, collaborate, and create together.
+  contact__items:
+    - title: Curious Minds & Future Talent
+      content: If you are eager to grow in data analytics, optimization, or software development, Datart Lab offers opportunities to work on real projects and gain valuable experience. Whether you are an undergraduate or graduate student, you can *join our projects to learn, contribute, and develop your skills*.
+    - title: Fellow Thinkers & Collaborators
+      content: We highly value collaborations with academics and researchers who share our interests. If you would like to co-develop *research projects, publish scientific papers, or partner on international grant applications*, our door is always open.
+    - title: Industry Partners
+      content: Datart Lab designs solutions for complex decision-making and optimization problems in industry. If *your company needs data-driven decision support systems, custom software solutions, or advanced analytics engines*, we are ready to collaborate and build tailored projects together.
 
 
 #-------------------------------
@@ -386,16 +233,6 @@ blog__settings:
 #-------------------------------
 # Footer Settings
 footer__background__image:
-
-
-#-------------------------------
-# Contact Settings
-contact:
-  email: # Add your form_id
-  description: # Add a description of your form
-
-# NOTE
-# Akio theme comes with a contact form built-in. You can use this form with Formspree (https://formspree.io/) service and get up to 50 submissions for free. Also, you can easily switch to another service if you want.
 
 
 #-------------------------------

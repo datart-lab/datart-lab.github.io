@@ -27,8 +27,7 @@ collections:
     output: false
     permalink: /blog/:slug
   works:
-    output: true
-    permalink: /projects/:slug
+    output: false
 
 # Pages Path
 defaults:
@@ -46,11 +45,6 @@ defaults:
       type: "posts"
     values:
       layout: "post"
-  - scope:
-      path: ""
-      type: "works"
-    values:
-      layout: "work"
 
 sass:
   sass_dir: _sass
