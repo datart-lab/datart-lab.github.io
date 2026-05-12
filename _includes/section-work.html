@@ -6,10 +6,9 @@
       <h2 class="section__title">{{ site.data.settings.work.work__title }}</h2>
       <div class="section__signals" aria-label="Project focus areas">
         {% assign sorted = site.works | sort: 'date' | reverse %}
-        <span>Field cases</span>
-        <span>Optimization engines</span>
-        <span>Simulation systems</span>
-        <span>Decision applications</span>
+        {% for signal in site.data.settings.work.work__signals %}
+        <span>{{ signal }}</span>
+        {% endfor %}
       </div>
     </div>
 

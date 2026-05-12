@@ -245,16 +245,3 @@ table td {
   font-size: 0.875rem;
   border: 1px solid var(--background-alt-color);
 }
-
-.lazy {
-  opacity: 0;
-  transition: opacity 0.3s ease-in-out;
-}
-
-.lazy.loaded {
-  opacity: 1;
-}
-
-.lightense-backdrop {
-  background-color: var(--background-color) !important;
-}

@@ -7,9 +7,9 @@
         <div class="section__info section__info--wide">
           <h2 class="section__title">{{ site.data.settings.contact.contact__title }}</h2>
           <div class="section__signals" aria-label="Contact paths">
-            <span>Future talent</span>
-            <span>Research partners</span>
-            <span>Industry teams</span>
+            {% for signal in site.data.settings.contact.contact__signals %}
+            <span>{{ signal }}</span>
+            {% endfor %}
           </div>
         </div>
 

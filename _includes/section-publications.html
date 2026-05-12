@@ -9,24 +9,20 @@
               <h2 class="section__title">{{ site.data.settings.publications.publications__title }}</h2>
             {% endif %}
             <div class="section__signals" aria-label="Publication signals">
-              <span>Optimization</span>
-              <span>Supply chain management</span>
-              <span>Data analytics</span>
+              {% for signal in site.data.settings.publications.publications__signals %}
+              <span>{{ signal }}</span>
+              {% endfor %}
             </div>
           </div>
         {% endif %}
 
           <div class="publication-groups">
-            {% assign publication_groups = "JP::Journal Articles|CP::Conference Proceedings and Book Chapters|EB::Edited Books and Special Issues" | split: "|" %}
-            {% for group in publication_groups %}
-              {% assign group_parts = group | split: "::" %}
-              {% assign group_type = group_parts[0] %}
-              {% assign group_title = group_parts[1] %}
-              {% assign group_items = site.data.publications | where: "type", group_type %}
+            {% for group in site.data.publication_groups %}
+              {% assign group_items = site.data.publications | where: "type", group.type %}
               {% if group_items.size > 0 %}
                 <section class="publication-group">
                   <div class="publication-group__header">
-                    <h3 class="publication-group__title">{{ group_title }}</h3>
+                    <h3 class="publication-group__title">{{ group.title }}</h3>
                   </div>
                   <ol class="publications-list list-reset">
                     {% for p in group_items %}

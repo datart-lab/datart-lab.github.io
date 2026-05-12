@@ -1,10 +1,3 @@
-<style>
-  .footer {
-    margin-top: 0 !important;
-    padding-top: 0 !important;
-  }
-
-</style>
 {% if site.data.settings.hero.enable == true %}
 <div class="hero__container">
     <div class="hero">
@@ -15,21 +8,15 @@
             </div>
             <div class="hero__content">
                 <div class="hero__title">
-                    <p>Decision analytics R&amp;D for operational systems.</p>
+                    <p>{{ site.data.settings.hero.hero__tagline }}</p>
                 </div>
                 <div class="hero__metrics" aria-label="Datart Lab capabilities">
+                  {% for metric in site.data.settings.hero.hero__metrics %}
                   <div>
-                    <span>Model</span>
-                    <strong>Problems</strong>
+                    <span>{{ metric.label }}</span>
+                    <strong>{{ metric.value }}</strong>
                   </div>
-                  <div>
-                    <span>Build</span>
-                    <strong>Engines</strong>
-                  </div>
-                  <div>
-                    <span>Create</span>
-                    <strong>Value</strong>
-                  </div>
+                  {% endfor %}
                 </div>
                 {% if page.image_caption %}
                 <div class="hero__caption">{{ page.image_caption | markdownify | replace: '<p>' | replace: '</p>' }}</div>
