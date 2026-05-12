@@ -4,24 +4,29 @@
   <section id="work" class="section works animate">
     <div class="section__info section__info--wide">
       <h2 class="section__title">{{ site.data.settings.work.work__title }}</h2>
-      <div class="section__description">{{ site.data.settings.work.work__description | markdownify }}</div>
+      <div class="section__signals" aria-label="Project focus areas">
+        {% assign sorted = site.works | sort: 'date' | reverse %}
+        <span>Field cases</span>
+        <span>Optimization engines</span>
+        <span>Simulation systems</span>
+        <span>Decision applications</span>
+      </div>
     </div>
 
-    <div class="projects__list">
-      {% assign sorted = site.works | sort: 'date' | reverse %}
-      {% for work in sorted %}
-      <article class="project">
-        <div class="project__media">
-          <img class="lazy" data-src="{{ work.image }}" alt="{{ work.title }}">
-        </div>
-        <div class="project__content">
-          <div class="work__category">{{ work.category }}</div>
-          <h3 class="project__title">{{ work.title }}</h3>
-          <p class="project__description">{{ work.description }}</p>
-          <div class="project__body">{{ work.content | replace: ' id="summary"', '' }}</div>
-        </div>
-      </article>
-      {% endfor %}
+    <div class="projects__marquee" aria-label="Selected project cases" tabindex="0">
+      <div class="projects__list">
+        {% for work in sorted %}
+        <article class="project">
+          <div class="project__media">
+            <img src="{{ work.image }}" alt="{{ work.title }}">
+          </div>
+          <div class="project__content">
+            <div class="work__category">{{ work.category | replace: '|', '/' }}</div>
+            <h3 class="project__title">{{ work.title }}</h3>
+          </div>
+        </article>
+        {% endfor %}
+      </div>
     </div>
   </section>
 </div>

@@ -95,6 +95,153 @@ document.addEventListener("DOMContentLoaded", function() {
     elements_selector: ".lazy"
   })
 
+  /* =======================
+  // Data Streams
+  ======================= */
+  const streamSpeed = 42;
+  const streamReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
+  const streamRails = [
+    {
+      rail: document.querySelector(".projects__marquee"),
+      track: document.querySelector(".projects__list")
+    },
+    {
+      rail: document.querySelector(".logos__marquee"),
+      track: document.querySelector(".logos__list")
+    }
+  ].filter((stream) => stream.rail && stream.track);
+
+  function streamGap(track) {
+    const style = window.getComputedStyle(track);
+    return parseFloat(style.columnGap || style.gap) || 0;
+  }
+
+  function streamStep(track, item) {
+    return item.getBoundingClientRect().width + streamGap(track);
+  }
+
+  function streamRender(stream) {
+    stream.track.style.transform = "translate3d(" + (-stream.offset) + "px, 0, 0)";
+  }
+
+  function streamMove(stream, distance) {
+    stream.offset += distance;
+
+    while (stream.offset >= streamStep(stream.track, stream.track.firstElementChild)) {
+      stream.offset -= streamStep(stream.track, stream.track.firstElementChild);
+      stream.track.appendChild(stream.track.firstElementChild);
+    }
+
+    while (stream.offset < 0) {
+      stream.track.insertBefore(stream.track.lastElementChild, stream.track.firstElementChild);
+      stream.offset += streamStep(stream.track, stream.track.firstElementChild);
+    }
+
+    streamRender(stream);
+  }
+
+  function pauseStream(stream) {
+    stream.pauseUntil = performance.now() + 900;
+  }
+
+  streamRails.forEach((stream) => {
+    stream.offset = 0;
+    stream.pauseUntil = 0;
+    stream.dragX = 0;
+    stream.didDrag = false;
+    stream.isDragging = false;
+    streamRender(stream);
+
+    stream.rail.addEventListener("wheel", (event) => {
+      if (Math.abs(event.deltaX) <= Math.abs(event.deltaY)) return;
+      event.preventDefault();
+      pauseStream(stream);
+      streamMove(stream, event.deltaX);
+    }, { passive: false });
+
+    stream.rail.addEventListener("pointerdown", (event) => {
+      pauseStream(stream);
+      stream.isDragging = true;
+      stream.didDrag = false;
+      stream.dragX = event.clientX;
+      stream.rail.classList.add("is-dragging");
+      stream.rail.setPointerCapture(event.pointerId);
+    });
+
+    stream.rail.addEventListener("pointermove", (event) => {
+      if (!stream.isDragging) return;
+      const movement = stream.dragX - event.clientX;
+      pauseStream(stream);
+      stream.didDrag = stream.didDrag || Math.abs(movement) > 3;
+      streamMove(stream, movement);
+      stream.dragX = event.clientX;
+    });
+
+    stream.rail.addEventListener("pointerup", (event) => {
+      stream.isDragging = false;
+      stream.rail.classList.remove("is-dragging");
+      stream.rail.releasePointerCapture(event.pointerId);
+    });
+
+    stream.rail.addEventListener("pointercancel", () => {
+      stream.isDragging = false;
+      stream.rail.classList.remove("is-dragging");
+    });
+
+    stream.rail.addEventListener("click", (event) => {
+      if (!stream.didDrag) return;
+      event.preventDefault();
+      event.stopPropagation();
+      stream.didDrag = false;
+    }, true);
+
+    stream.rail.addEventListener("keydown", (event) => {
+      if (event.key === "ArrowRight") {
+        event.preventDefault();
+        pauseStream(stream);
+        streamMove(stream, streamStep(stream.track, stream.track.firstElementChild));
+      }
+
+      if (event.key === "ArrowLeft") {
+        event.preventDefault();
+        pauseStream(stream);
+        streamMove(stream, -streamStep(stream.track, stream.track.lastElementChild));
+      }
+    });
+  });
+
+  function animateStreams(time) {
+    animateStreams.lastTime = animateStreams.lastTime || time;
+    const delta = (time - animateStreams.lastTime) / 1000;
+    animateStreams.lastTime = time;
+
+    streamRails.forEach((stream) => {
+      if (streamReducedMotion.matches || stream.isDragging || time < stream.pauseUntil) return;
+      streamMove(stream, streamSpeed * delta);
+    });
+
+    if (streamRails.length) {
+      requestAnimationFrame(animateStreams);
+    }
+  }
+
+  if (streamRails.length) {
+    requestAnimationFrame(animateStreams);
+  }
+
+  /* =======================
+  // Publications Fade
+  ======================= */
+  const publicationsPanel = document.querySelector(".publication-groups");
+
+  function updatePublicationsFade() {
+    const atEnd = publicationsPanel.scrollTop + publicationsPanel.clientHeight >= publicationsPanel.scrollHeight - 1;
+    publicationsPanel.classList.toggle("is-at-end", atEnd);
+  }
+
+  publicationsPanel.addEventListener("scroll", updatePublicationsFade, { passive: true });
+  window.addEventListener("resize", updatePublicationsFade);
+  updatePublicationsFade();
 
   /* =======================
   // Zoom Image

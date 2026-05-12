@@ -1,6 +1,8 @@
 /* Footer */
 .footer {
-  margin-top: 120px;
+  margin-top: 72px;
+  border-top: 1px solid var(--border-color);
+  background-color: var(--panel-color);
 
   .footer__bg {
     position: absolute;
@@ -76,7 +78,7 @@
 
 /* Copyrigth */
 .copyright {
-  padding: 40px 0;
+  padding: 24px 0;
   font-size: 0.875rem;
   text-align: center;
 

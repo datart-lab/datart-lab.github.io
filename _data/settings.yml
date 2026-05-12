@@ -131,7 +131,7 @@ mailchimp:
 # Work Settings
 work:
   enable: true
-  work__title: Selected Projects
+  work__title: Projects
   work__description: At **Datart Lab**, we design and build **intelligent optimization engines** from the ground up — starting with **mathematical models** and **algorithms** and extending all the way to **robust software systems** and **user-friendly applications**. We combine **rigorous research** with **real-world impact**. By leading government-funded projects and contributing to **state-of-the-art academic work**, we ensure our methods remain **innovative**, **validated**, and **impactful**. At the same time, we partner with companies in logistics, transportation, healthcare, and beyond to turn complex challenges into **practical, scalable solutions**.
 
 
@@ -210,7 +210,8 @@ publications:
 contact:
   enable: true
   contact__title: Contact
-  contact__intro: Reach out to us at [team@datart-lab.com](mailto:team@datart-lab.com) to connect, collaborate, and create together.
+  contact__intro: Reach out to us at
+  contact__email: team@datart-lab.com
   contact__items:
     - title: Curious Minds & Future Talent
       content: If you are eager to grow in data analytics, optimization, or software development, Datart Lab offers opportunities to work on real projects and gain valuable experience. Whether you are an undergraduate or graduate student, you can *join our projects to learn, contribute, and develop your skills*.

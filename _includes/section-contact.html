@@ -6,7 +6,11 @@
       <div class="col col-12">
         <div class="section__info section__info--wide">
           <h2 class="section__title">{{ site.data.settings.contact.contact__title }}</h2>
-          <div class="contact-section__intro text-lg">{{ site.data.settings.contact.contact__intro | markdownify }}</div>
+          <div class="section__signals" aria-label="Contact paths">
+            <span>Future talent</span>
+            <span>Research partners</span>
+            <span>Industry teams</span>
+          </div>
         </div>
 
         <div class="contact-section__items">
@@ -16,6 +20,12 @@
             <div class="contact-section__text">{{ item.content | markdownify }}</div>
           </article>
           {% endfor %}
+        </div>
+
+        <div class="contact-section__cta" aria-label="Contact information">
+          <a class="contact-section__email" href="mailto:{{ site.data.settings.contact.contact__email }}">
+            {{ site.data.settings.contact.contact__intro }} <strong>{{ site.data.settings.contact.contact__email }}</strong>.
+          </a>
         </div>
       </div>
     </div>
