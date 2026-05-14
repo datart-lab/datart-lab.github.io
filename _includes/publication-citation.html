@@ -1,0 +1,23 @@
+{% assign p = include.publication %}
+{% assign pages = p.pages | replace: '-', '&ndash;' %}
+{% assign linked_title = p.title %}
+{% if p.doi_url and p.doi_url != '' %}
+  {% assign linked_title = '<a href="' | append: p.doi_url | append: '" target="_blank" rel="noopener noreferrer">' | append: p.title | append: '</a>' %}
+{% endif %}
+{% if p.template == 'journal_article' %}
+  {{ p.authors }}, "{{ linked_title }}," <em>{{ p.venue }}</em>{% if p.volume and p.volume != '' %}, vol. {{ p.volume }}{% endif %}{% if p.issue and p.issue != '' %}, no. {{ p.issue }}{% endif %}{% if p.pages and p.pages != '' %}{% if p.pages contains '-' %}, pp. {{ pages }}{% else %}, {{ p.pages }}{% endif %}{% endif %}, {{ p.year }}.
+{% elsif p.template == 'book_chapter' or p.template == 'book_chapter_fields' %}
+  {{ p.authors }}, <em>{{ p.venue }}</em>{% unless p.venue contains 'vol.' %}{% if p.volume and p.volume != '' %}, vol. {{ p.volume }}{% endif %}{% endunless %}{% if p.editors and p.editors != '' %}, {{ p.editors }}, Eds.{% endif %}{% if p.publisher and p.publisher != '' %}, {{ p.publisher }}{% endif %}, {{ p.year }}, ch. {{ p.title }}{% if p.pages and p.pages != '' %}, pp. {{ pages }}{% endif %}.
+{% elsif p.template == 'in_book' %}
+  {{ p.authors }}, "{{ p.title }}," in <em>{{ p.venue }}</em>{% if p.editors and p.editors != '' %}, {{ p.editors }}, Eds.{% endif %}{% unless p.venue contains 'vol.' %}{% if p.volume and p.volume != '' %}, vol. {{ p.volume }}{% endif %}{% endunless %}{% if p.publisher and p.publisher != '' %}, {{ p.publisher }}{% endif %}, {{ p.year }}{% if p.pages and p.pages != '' %}, pp. {{ pages }}{% endif %}.
+{% elsif p.template == 'conference_book' %}
+  {{ p.authors }}, "{{ p.title }}," in <em>{{ p.venue }}</em>{% if p.publisher and p.publisher != '' %}, {{ p.publisher }}{% endif %}, {{ p.year }}{% if p.pages and p.pages != '' %}, pp. {{ pages }}{% endif %}.
+{% elsif p.template == 'conference' %}
+  {{ p.authors }}, "{{ p.title }}," in <em>{{ p.venue }}</em>{% if p.editors and p.editors != '' %}, {{ p.editors }}, Eds.{% endif %}{% if p.volume and p.volume != '' %}, vol. {{ p.volume }}{% endif %}, {{ p.year }}{% if p.pages and p.pages != '' %}, pp. {{ pages }}{% endif %}.
+{% elsif p.template == 'edited_proceedings' %}
+  {{ p.authors }}, Eds. <em>{{ p.title }}</em>, {{ p.year }}.
+{% elsif p.template == 'edited_volume' %}
+  {{ p.authors }}, Eds., <em>{{ p.title }}</em>{% if p.venue and p.venue != '' %}, {{ p.venue }}{% endif %}{% if p.publisher and p.publisher != '' %}, {{ p.publisher }}{% endif %}, {{ p.year }}.
+{% else %}
+  {{ p.authors }}, "{{ linked_title }}," <em>{{ p.venue }}</em>{% if p.year and p.year != '' %}, {{ p.year }}{% endif %}.
+{% endif %}

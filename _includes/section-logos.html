@@ -1,7 +1,7 @@
 {% if site.data.settings.logos.enable == true %}
 <!-- begin logos -->
 <div class="container">
-  <section class="section animate">
+  <section id="collaborators" class="section logos animate">
     <div class="row">
       <div class="col col-12">
 
@@ -9,15 +9,17 @@
           <h2 class="section__small__title">{{ site.data.settings.logos.logos__title }}</h2>
         </div>
 
-        <ul class="logos__list list-reset">
-          {% for logo in site.data.settings.logo__items %}
-          <li class="logos__item">
-            <a href="{{ logo.link }}" class="logos__link" rel="noopener">
-              <img src="{{ logo.image }}" draggable="false" alt="{{ logo.name }}" class="logos__image">
-            </a>
-          </li>
-          {% endfor %}
-        </ul>
+        <div class="logos__marquee" aria-label="{{ site.data.settings.logos.logos__title }}" tabindex="0">
+          <div class="logos__list">
+            {% for logo in site.data.settings.logo__items %}
+            <div class="logos__item">
+              <a href="{{ logo.link }}" class="logos__link" rel="noopener">
+                <img src="{{ logo.image }}" draggable="false" alt="{{ logo.name }}" class="logos__image">
+              </a>
+            </div>
+            {% endfor %}
+          </div>
+        </div>
 
       </div>
     </div>

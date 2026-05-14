@@ -1,18 +1,25 @@
 /* Color Scheme */
 
 :root {
-  --primary-color: #3F51B5;
+  --primary-color: #0f6f7a;
   --white: #fff;
-  --light-gray: #f5f5f5;
-  --lighten-gray: #e7e7e7;
-  --light-blue: #afB5bd;
-  --blue-gray: #687385;
-  --gray: #e0e0e0;
-  --dark: #080227;
-  --logo-color: #3F51B5;
+  --light-gray: #f4f6f4;
+  --lighten-gray: #e6ebe8;
+  --light-blue: #8d9ba1;
+  --blue-gray: #59676d;
+  --gray: #d4ddd8;
+  --dark: #182126;
+  --logo-color: #0f6f7a;
+  --signal-green: #22855f;
+  --signal-amber: #b97812;
+  --signal-red: #b84a3a;
+  --panel-color: #ffffff;
+  --panel-alt-color: #eef3f0;
+  --grid-line-color: rgba(24, 33, 38, 0.055);
+  --shadow-color: rgba(33, 46, 52, 0.12);
 
   // Background Color
-  --background-color: var(--white);
+  --background-color: #f8faf8;
   --background-alt-color: var(--light-gray);
 
   // Body Color
@@ -30,7 +37,7 @@
   // Button
   --button-color: var(--white);
   --button-background-color: var(--primary-color);
-  --button-background-hover: #4035c8;
+  --button-background-hover: #0a5962;
 
   // Border
   --border-color: var(--gray);

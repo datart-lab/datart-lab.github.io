@@ -1,40 +1,45 @@
 {% if site.data.settings.publications.enable == true %}
 <div class="container">
-  <section class="section animate">
+  <section id="publications" class="section animate">
     <div class="row">
       <div class="col col-12">
         {% if site.data.settings.publications.publications__title != '' or site.data.settings.publications.publications__description != '' %}
           <div class="section__info">
             {% if site.data.settings.publications.publications__title != '' %}
-              <h2 class="section__small__title">{{ site.data.settings.publications.publications__title }}</h2>
+              <h2 class="section__title">{{ site.data.settings.publications.publications__title }}</h2>
             {% endif %}
-            {% if site.data.settings.publications.publications__description != '' %}
-              <p class="section__description">{{ site.data.settings.publications.publications__description }}</p>
-            {% endif %}
+            <div class="section__signals" aria-label="Publication signals">
+              {% for signal in site.data.settings.publications.publications__signals %}
+              <span>{{ signal }}</span>
+              {% endfor %}
+            </div>
           </div>
         {% endif %}
 
-          <ul class="publications-list list-reset">
-            {% for p in site.data.settings.publications.publications__items %}
-              <li class="publication">
-                <span class="citation">{{ p.citation }}</span>
-                {% if p.paper_url or p.github_url %}
-                  <span class="publication__links">
-                    {% if p.paper_url %}
-                      <a href="{{ p.paper_url }}" class="publication__link" target="_blank" title="View Paper">
-                        <span class="fa-regular fa-file-lines" role="img" aria-label="View Paper"></span>
-                      </a>
-                    {% endif %}
-                    {% if p.github_url %}
-                      <a href="{{ p.github_url }}" class="publication__link" target="_blank" title="View GitHub Repo">
-                        <span class="ion ion-logo-github" role="img" aria-label="View GitHub Repo"></span>
-                      </a>
-                    {% endif %}
-                  </span>
-                {% endif %}
-              </li>
+          <div class="publication-groups">
+            {% for group in site.data.publication_groups %}
+              {% assign group_items = site.data.publications | where: "type", group.type %}
+              {% if group_items.size > 0 %}
+                <section class="publication-group">
+                  <div class="publication-group__header">
+                    <h3 class="publication-group__title">{{ group.title }}</h3>
+                  </div>
+                  <ol class="publications-list list-reset">
+                    {% for p in group_items %}
+                      <li class="publication">
+                        <span class="citation">
+                          {% include publication-citation.html publication=p %}
+                          {% if p.source_code and p.source_code != '' %}
+                            <a href="{{ p.source_code }}" class="publication__source" target="_blank" rel="noopener noreferrer">Source Code</a>
+                          {% endif %}
+                        </span>
+                      </li>
+                    {% endfor %}
+                  </ol>
+                </section>
+              {% endif %}
             {% endfor %}
-          </ul>
+          </div>
 
       </div>
     </div>

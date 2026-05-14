@@ -1,7 +1,7 @@
 #-------------------------------
 # General Site Settings
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://datart-lab.com" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: ""
+url: "https://datart-lab.com"
 port: 4001
 
 
@@ -10,11 +10,7 @@ port: 4001
 markdown: kramdown
 permalink: /:title
 plugins:
-  - jekyll-paginate
   - jekyll-sitemap
-
-paginate: 5
-paginate_path: "/blog/page/:num"
 
 
 #-------------------------------
@@ -23,12 +19,8 @@ collections:
   pages:
     output: true
     permalink: /:name
-  posts:
-    output: false
-    permalink: /blog/:slug
   works:
-    output: true
-    permalink: /projects/:slug
+    output: false
 
 # Pages Path
 defaults:
@@ -41,16 +33,6 @@ defaults:
       type: "pages"
     values:
       layout: "page"
-  - scope:
-      path: ""
-      type: "posts"
-    values:
-      layout: "post"
-  - scope:
-      path: ""
-      type: "works"
-    values:
-      layout: "work"
 
 sass:
   sass_dir: _sass

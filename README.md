@@ -1,68 +1,33 @@
-# Akio – Creative Portfolio Theme for Jekyll
+# Datart Lab Website
 
-Akio is a creative personal portfolio Jekyll theme. This theme has a modern design and high-speed performance. The highlights of this theme include support Github Pages, light and dark mode, and also sections such as work, blog, clients, and testimonials. Perfectly suitable for any developer, designer, freelancer, software engineer, or some other who needs a professional way to showcase their work.
+Single-page Jekyll site for Datart Lab.
 
-* * *
+## Local Development
 
-### Demo
+Install dependencies:
 
-Check the theme in action [Live Demo](https://akio-jekyll.netlify.app/) |
-[Artem Sheludko](https://jekyllthemes.io/developers/artem-sheludko)
+```sh
+bundle config set path .bundle
+bundle install
+```
 
-* * *
+Run the local server:
 
-### Theme features
+```sh
+bundle exec jekyll serve --livereload
+```
 
-- Works with GitHub Pages (host it for free)
-- Dark and light mode user can select themself
-- No jQuery, only vanilla JS
-- 100% responsive Design
-- Clean Code
-- Optimized for mobile devices
-- Section Blog
-- Section Works
-- Section Testimonials
-- Super fast performance ⚡⚡⚡
-- Social sharing buttons
-- Scroll to top button
-- Syntax highlighting (supports the Jekyll syntax highlighter)
-- Compatible with modern browsers
-- Medium style image zoom
-- Image Lazy loading
-- Image gallery
-- Custom logo support
-- Supports contact form (Formspree)
-- Supports MailChimp newsletter
-- Supports Disqus comments
-- Supports Google Analytics
-- Ionicons icons
-- Free Google Fonts
-- Free Updates & Support
+The configured local port is `4001`, so the site is available at `http://127.0.0.1:4001/`.
 
-* * *
+## Content
 
-### Installation
+- Main page sections are composed in `index.html`.
+- Site copy and section labels live in `_data/settings.yml`.
+- Publications live in `_data/publications.csv`.
+- Publication groups live in `_data/publication_groups.yml`.
+- Project cards live in `_works/`.
+- Collaborator logos are configured in `_data/settings.yml` and stored in `images/`.
 
-#### Installing Ruby & Jekyll
+## Maintenance Notes
 
-If this is your first time using Jekyll, please follow the [Jekyll docs](https://jekyllrb.com/docs/installation/) and make sure your local environment (including Ruby) is setup correctly.
-
-* * *
-
-### Deployment
-
-To run the theme locally, navigate to the theme directory and run `bundle install` to install the dependencies, then run `jekyll serve` or `bundle exec jekyll serve` to start the Jekyll server.
-
-I would recommend checking the [Deployment Methods](https://jekyllrb.com/docs/deployment-methods/) page on Jekyll website.
-
-* * *
-
-### Documentation
-
-Before using the Akio theme, please read the attached documentation.
-
-* * *
-
-### Support
-
-<p>If you have any questions, please feel free to contact me by mail <a href="mailto:hi.artemsheludko@gmail.com">Contact</a><p>
+Generated files are intentionally ignored. Do not commit `_site/`, `.jekyll-cache/`, `.bundle/`, or `vendor/`; rebuild them locally with Bundler and Jekyll.
