@@ -17,28 +17,7 @@
         {% endif %}
 
           <div class="publication-groups">
-            {% for group in site.data.publication_groups %}
-              {% assign group_items = site.data.publications | where: "type", group.type %}
-              {% if group_items.size > 0 %}
-                <section class="publication-group">
-                  <div class="publication-group__header">
-                    <h3 class="publication-group__title">{{ group.title }}</h3>
-                  </div>
-                  <ol class="publications-list list-reset">
-                    {% for p in group_items %}
-                      <li class="publication">
-                        <span class="citation">
-                          {% include publication-citation.html publication=p %}
-                          {% if p.source_code and p.source_code != '' %}
-                            <a href="{{ p.source_code }}" class="publication__source" target="_blank" rel="noopener noreferrer">Source Code</a>
-                          {% endif %}
-                        </span>
-                      </li>
-                    {% endfor %}
-                  </ol>
-                </section>
-              {% endif %}
-            {% endfor %}
+            <ol id="publications-list" class="publications-list list-reset"></ol>
           </div>
 
       </div>
