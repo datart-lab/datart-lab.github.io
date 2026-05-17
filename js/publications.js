@@ -1,5 +1,5 @@
 (function () {
-  var CSV_URL = 'https://erhun.me/pdf/publications.csv';
+  var CSV_URL = 'https://erhun.me/public/publications.csv';
 
   function parseCSVLine(line) {
     var result = [], current = '', inQuotes = false;
