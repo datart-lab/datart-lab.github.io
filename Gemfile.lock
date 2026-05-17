@@ -11,7 +11,10 @@ GEM
       http_parser.rb (~> 0)
     eventmachine (1.2.7)
     ffi (1.17.4)
+    ffi (1.17.4-arm64-darwin)
+    ffi (1.17.4-x86_64-linux-gnu)
     forwardable-extended (2.6.0)
+    google-protobuf (3.23.4)
     google-protobuf (3.23.4-arm64-darwin)
     http_parser.rb (0.8.1)
     i18n (1.14.8)
@@ -60,13 +63,17 @@ GEM
     safe_yaml (1.0.5)
     sass-embedded (1.58.3-arm64-darwin)
       google-protobuf (~> 3.21)
+    sass-embedded (1.58.3-x86_64-linux-gnu)
+      google-protobuf (~> 3.21)
     terminal-table (3.0.2)
       unicode-display_width (>= 1.1.1, < 3)
     unicode-display_width (2.6.0)
     webrick (1.9.2)
 
 PLATFORMS
+  arm64-darwin-23
   arm64-darwin-25
+  x86_64-linux
 
 DEPENDENCIES
   bigdecimal
@@ -75,4 +82,4 @@ DEPENDENCIES
   jekyll-sitemap
 
 BUNDLED WITH
-   2.4.22
+   2.7.1
