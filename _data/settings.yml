@@ -1,0 +1,147 @@
+#-------------------------------
+# Site Settings
+title: Datart Lab
+logo: /images/logo_trimmed.png
+description: Decision Analytics Advanced Research and Development Lab
+color_scheme: light
+
+
+#-------------------------------
+# Hero Settings
+hero:
+  enable: true
+  hero__tagline: Decision analytics R&D for operational systems.
+  hero__image: /images/hero.jpg
+  hero__image_mobile: /images/hero_mobile.jpg
+  hero__metrics:
+    - label: Model
+      value: Problems
+    - label: Build
+      value: Engines
+    - label: Create
+      value: Value
+
+
+#-------------------------------
+# Logos Settings
+logos:
+  enable: true
+  logos__title: Industry Collaborators
+
+logo__items:
+
+  - name: Arute
+    link: "https://arutesolutions.com/"
+    image: "/images/arute.png"
+
+  - name: ATV
+    link: "https://www.atv.com.tr"
+    image: "/images/atv.png"
+
+  - name: Bicakcilar
+    link: "https://kocmedical.com/"
+    image: "/images/bicakcilar.svg"
+
+  - name: Borcelik
+    link: "https://www.borcelik.com/"
+    image: "/images/borcelik.png"
+
+  - name: Cansan
+    link: "https://www.cansan.com.tr/"
+    image: "/images/cansan.png"
+
+  - name: Durak
+    link: "https://durak.com/"
+    image: "/images/durak.png"
+
+  - name: Funthemental
+    link: "http://www.funthemental.com.tr/"
+    image: "/images/fm.png"
+
+  - name: Harris Health
+    link: "https://www.harrishealth.org/"
+    image: "/images/hh.png"
+
+  - name: Hitit
+    link: "https://www.hitit.com/"
+    image: "/images/hitit.png"
+
+  - name: Honeywell
+    link: "https://www.honeywell.com/"
+    image: "/images/hw.png"
+
+  - name: Keller Williams
+    link: "https://www.kw.com/"
+    image: "/images/kw.png"
+
+  - name: Kronos
+    link: "https://www.ukg.com/"
+    image: "/images/ukg.png"
+
+  - name: Magic Generations
+    link: "https://www.mgsportif.com/"
+    image: "/images/mg.png"
+
+  - name: Mir Unique Solutions
+    link: "https://www.mirarge.com/"
+    image: "/images/mir.png"
+
+  - name: Modular Mining
+    link: "https://www.komatsu.com/"
+    image: "/images/Komatsu.png"
+
+  - name: Odysee
+    link: "https://www.odysee.ai/"
+    image: "/images/odysee.png"
+
+  - name: Tam Finans
+    link: "https://www.tamfinans.com.tr/"
+    image: "/images/tamfinans.png"
+
+
+#-------------------------------
+# Work Settings
+work:
+  enable: true
+  work__title: Projects
+  work__signals:
+    - Field cases
+    - Optimization engines
+    - Simulation systems
+    - Decision applications
+
+
+#-------------------------------
+# Publications Settings
+publications:
+  enable: true
+  publications__title: Publications
+  publications__description:
+  publications__signals:
+    - Optimization
+    - Supply chain management
+    - Data analytics
+
+
+#-------------------------------
+# Contact Section
+contact:
+  enable: true
+  contact__title: Contact
+  contact__intro: Reach out to us at
+  contact__email: team@datart-lab.com
+  contact__signals:
+    - Future talent
+    - Research partners
+    - Industry teams
+  contact__items:
+    - title: Curious Minds & Future Talent
+      content: If you are eager to grow in data analytics, optimization, or software development, Datart Lab offers opportunities to work on real projects and gain valuable experience. Whether you are an undergraduate or graduate student, you can *join our projects to learn, contribute, and develop your skills*.
+    - title: Fellow Thinkers & Collaborators
+      content: We highly value collaborations with academics and researchers who share our interests. If you would like to co-develop *research projects, publish scientific papers, or partner on international grant applications*, our door is always open.
+    - title: Industry Partners
+      content: Datart Lab designs solutions for complex decision-making and optimization problems in industry. If *your company needs data-driven decision support systems, custom software solutions, or advanced analytics engines*, we are ready to collaborate and build tailored projects together.
+
+#-------------------------------
+# Google Analytics
+google-analytics:
