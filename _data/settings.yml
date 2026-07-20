@@ -74,10 +74,6 @@ logo__items:
     link: "https://www.kw.com/"
     image: "/images/kw.png"
 
-  - name: Kronos
-    link: "https://www.ukg.com/"
-    image: "/images/ukg.png"
-
   - name: Magic Generations
     link: "https://www.mgsportif.com/"
     image: "/images/mg.png"
@@ -94,17 +90,21 @@ logo__items:
     link: "https://www.odysee.ai/"
     image: "/images/odysee.png"
 
+  - name: Poligon
+    link: "https://www.poligonmuhendislik.com/"
+    image: "/images/poligon.svg"
+  
   - name: SkyGene
     link: "https://github.com/DatartApps/SkyGene"
     image: "/images/skygene.png"
 
-  - name: Poligon
-    link: "https://www.poligonmuhendislik.com/"
-    image: "/images/poligon.svg"
-
   - name: Tam Finans
     link: "https://www.tamfinans.com.tr/"
     image: "/images/tamfinans.png"
+
+  - name: Kronos
+    link: "https://www.ukg.com/"
+    image: "/images/ukg.png"
 
 
 #-------------------------------
