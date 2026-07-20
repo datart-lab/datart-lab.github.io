@@ -94,9 +94,13 @@ logo__items:
     link: "https://www.odysee.ai/"
     image: "/images/odysee.png"
 
+  - name: SkyGene
+    link: "https://github.com/DatartApps/SkyGene"
+    image: "/images/skygene.png"
+
   - name: Poligon
     link: "https://www.poligonmuhendislik.com/"
-    image: "https://www.poligonmuhendislik.com/wp-content/uploads/2023/11/Poligon-Logo-Lacivert.svg"
+    image: "/images/poligon.svg"
 
   - name: Tam Finans
     link: "https://www.tamfinans.com.tr/"
